@@ -1,0 +1,145 @@
+/* Profile Info */
+.profile-info {
+    text-align: left;
+    padding: 0 25px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #dedbdb;
+}
+
+/* Contact List */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 0 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #dedbdb;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: color 0.3s;
+}
+
+.contact-item:hover {
+    color: #fff;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+    background-color: rgba(238, 29, 36, 1);
+    padding: 8px;
+    border-radius: 10px;
+}
+.iconс {
+    margin: 0px 10px 0px 12px;
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*gap: 8px; /* Отступ между иконкой и текстом */
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: rgba(238, 29, 36, 1);
+    color: #fff;
+    text-align: left;
+    font-family: Muller;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+
+.btn-telegram {
+    background-color: rgba(238, 29, 36, 1);
+    color: #fff;
+    text-align: left;
+    font-family: Muller;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+.btn-telegram:hover,
+.btn-telegram:active,
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: rgba(238, 29, 36, 1); /* Цвет остается неизменным */
+    color: white;
+    transform: none; /* Отключаем увеличение при наведении */
+    box-shadow: none; /* Убираем тени */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 428px) {
+    .name {
+        font-size: 24px;
+    }
+
+    .role {
+        font-size: 16px;
+    }
+
+    .contact-item {
+        font-size: 16px;
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*gap: 8px; /* Отступ между иконкой и текстом */
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: lighter;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .name {
+        font-size: 20px;
+    }
+
+    .role {
+        font-size: 14px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+    }
+
+    
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
